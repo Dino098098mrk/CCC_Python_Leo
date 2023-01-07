@@ -1,3 +1,1 @@
 ##forked
-
-print("go to ")
