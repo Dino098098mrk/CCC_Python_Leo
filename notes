@@ -1,0 +1,11 @@
+1. Implementation J1-J4
+2. Simulation J3-J4
+3. J5:
+  a. Graph Search: BFS(Queue)/DFS(Stack)
+    list: [].
+    BFS: pop(0), push()
+    DFS: pop(), push()
+  b. Recursion/ Divide and conquer
+  c. Dynamic Programming
+
+DMOJ
