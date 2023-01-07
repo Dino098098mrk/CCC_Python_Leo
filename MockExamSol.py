@@ -206,4 +206,4 @@ def J5():
   drawFractal([0, 1], [width, 1], level, xIntersect)
 
 
-J5()
+# J5()
