@@ -1,4 +1,6 @@
+from 
 array = [[0 for x in range(8)]for x in range(8)] 
+constraint = [0]*8
 
 array[1][7] = 1
 array[1][4] = 1
@@ -18,5 +20,12 @@ while(True):
     array[x][y] = 1
 
 
+for i in array:
+    for j in range(1,8):
+      if i[j] ==  1:
+        constraint[j] +=1
 
+print(constraint)
+      
+        
 
