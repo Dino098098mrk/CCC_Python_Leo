@@ -10,3 +10,4 @@ for i in range(1,x+1):
       counter += 1
 
 print(counter)
+# CCC solution 2006
