@@ -10,7 +10,6 @@ array[3][5] = 1
 
 # print(array)
 
-
 while(True):
   x = int(input())
   y = int(input())
