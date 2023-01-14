@@ -41,6 +41,9 @@ while not pq.empty():
       constraint[i] -=1
       if constraint[i]==0:
         pq.put(i)
-        
-        
+
+if len(output)<7:
+  print("Cannot complete the tasks")
+else:
+  print(*output)
 
