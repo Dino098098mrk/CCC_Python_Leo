@@ -1,3 +1,4 @@
+#graph, using a tallies
 from queue import PriorityQueue
 array = [[0 for x in range(8)]for x in range(8)] 
 constraint = [0]*8
