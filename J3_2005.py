@@ -24,7 +24,5 @@ for i in new:
   else:
     print("Turn "+ i[0] + " into your HOME.")
   
-    
   
-    
-
+#compeleted 
