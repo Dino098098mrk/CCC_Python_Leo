@@ -25,4 +25,4 @@ for i in new:
     print("Turn "+ i[0] + " into your HOME.")
   
   
-#compeleted 
+#compeleted solution
