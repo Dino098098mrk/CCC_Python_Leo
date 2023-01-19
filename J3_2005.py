@@ -1,4 +1,4 @@
-arr = []
+arrarr = []
 new = []
 while(True):
   first = str(input())
