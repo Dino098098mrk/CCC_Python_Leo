@@ -17,4 +17,9 @@ extremeSize = 1000000000
 
 largestSize = 0
 
-totalTrees = 
+totalTrees = treeCount
+for i in range(totalTrees):
+  for j in range(totalTrees):
+    if i==j and i != treeCount-1:
+      continue
+    
