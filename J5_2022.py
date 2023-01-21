@@ -1,3 +1,4 @@
+#brute force
 numberOfGrid = int(input())
 treeCount = int(input())
 treeList = []
