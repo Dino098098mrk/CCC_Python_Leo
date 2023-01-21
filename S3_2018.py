@@ -6,7 +6,7 @@ x = int(rowcol[0])
 y = int(rowcol[1])
 
 startPosition = None
-factorymap = []
+factoryMap = []
 conceptualmap = []
 
 for i in range(x):
@@ -17,3 +17,9 @@ for i in range(x):
       startPosition = [i, start_col]
   factoryMap.append(list(row))
   conceptualmap[-1]*y
+
+#for row
+#    for col
+#        while 
+            #if cam *
+#              check up/dpwn/left/right 
