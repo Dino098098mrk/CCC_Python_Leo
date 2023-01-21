@@ -12,3 +12,9 @@ for i in range(treeCount):
 treeList.append([0, 0])
 treeCount += 1
 print(treeList)
+
+extremeSize = 1000000000
+
+largestSize = 0
+
+totalTrees = 
