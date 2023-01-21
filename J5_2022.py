@@ -11,13 +11,12 @@ for i in range(treeCount):
 
 treeList.append([0, 0])
 treeCount += 1
-print(treeList)
 
 extremeSize = 1000000000
 
 largestSize = 0
 
-totalTrees = treeCount
+totalTrees = len(treeList)
 for i in range(totalTrees):
   for j in range(totalTrees):
     if i==j and i != treeCount-1:
@@ -34,3 +33,5 @@ for i in range(totalTrees):
         currentSize = min(currentSize, max(verticalWindowSize, horizontalWindowSize))
       if(min(numberOfGrid-verticalBound, numberOfGrid-horizontalBound-1)<currentSize):
         currentSize = min(numberOfGrid-verticalBound, numberOfGrid-horizontalBound-1)
+      largestSize = max(largestSize, currentSize)
+print(largestSize)
