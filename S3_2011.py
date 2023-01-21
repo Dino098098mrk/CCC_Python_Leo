@@ -14,6 +14,8 @@ def isCrystal(magLevel, x,y):
     return True
   elif(zoomout_x, zoomout_y) in {(1,1),(2,2),(3,1)}:
     return isCrystal(magLevel-1,x%(5**(magLevel-1)),y%(5**(magLevel-1)))
+  else: 
+    return False
   
     
 CountT = int(input())
