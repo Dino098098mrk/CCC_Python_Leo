@@ -31,7 +31,8 @@ for i in range(totalTrees):
         verticalWindowSize = treeList[k][0] - verticalBound - 1
         horizontalWindowSize = treeList[k][1] - horizontalBound-1
         currentSize = min(currentSize, max(verticalWindowSize, horizontalWindowSize))
+        
       if(min(numberOfGrid-verticalBound, numberOfGrid-horizontalBound)<currentSize):
-        currentSize = min(numberOfGrid-verticalBound, numberOfGrid-horizontalBound-1)
+        currentSize = min(numberOfGrid-verticalBound, numberOfGrid-horizontalBound)
       largestSize = max(largestSize, currentSize)
 print(largestSize)
