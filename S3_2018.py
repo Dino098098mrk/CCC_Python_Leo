@@ -16,15 +16,18 @@ for i in range(x):
     if start_col!= -1:
       startPosition = [i, start_col]
   factoryMap.append(list(row))
-  conceptualmap[-1]*y
+  conceptualmap[::-1]*y
   
-for i in row:
-  for j in col:
-    while(True):
-      if i[j] == "C":
-        factoryMap[i = "*"
+  for i in range(x):
+    for j in range(y):
+      if factoryMap[i][j] == 'C':
+        factoryMap[i][j+1] = "*"
+        factoryMap[i][j-1] = "*"
         
         
+        
+        
+print(factoryMap)        
 
 #for row
 #    for col
