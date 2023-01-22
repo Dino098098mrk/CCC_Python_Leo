@@ -18,11 +18,12 @@ for i in range(x):
   factoryMap.append(list(row))
   conceptualmap[::-1]*y
   
-  for i in range(x):
-    for j in range(y):
-      if factoryMap[i][j] == 'C':
-        factoryMap[i][j+1] = "*"
-        factoryMap[i][j-1] = "*"
+  # for i in range(x-1):
+  #   for j in range(y-1):
+  #       #if factoryMap[i][j] == "C" then check up/down/left/right in factoryMap update factory map spot to *
+  #       if factoryMap[i][j] == "C":
+  #         factoryMap[i][j+1] = "*"
+  #         factoryMap[i][j-1] = "*"
         
         
         
@@ -37,4 +38,5 @@ print(factoryMap)
   #queue startPosition
   #conceptualmap[startx][starty] = 0
 #BFS
+
 
