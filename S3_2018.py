@@ -17,9 +17,18 @@ for i in range(x):
       startPosition = [i, start_col]
   factoryMap.append(list(row))
   conceptualmap[-1]*y
+  
+  for i in row:
+    for j in col:
+      while(True):
+        
 
 #for row
 #    for col
 #        while 
             #if cam *
-#              check up/dpwn/left/right 
+#              check up/dpwn/left/right update factory map spot to *
+  #queue startPosition
+  #conceptualmap[startx][starty] = 0
+#BFS
+
