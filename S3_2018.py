@@ -18,9 +18,12 @@ for i in range(x):
   factoryMap.append(list(row))
   conceptualmap[-1]*y
   
-  for i in row:
-    for j in col:
-      while(True):
+for i in row:
+  for j in col:
+    while(True):
+      if i[j] == "C":
+        factoryMap[i = "*"
+        
         
 
 #for row
