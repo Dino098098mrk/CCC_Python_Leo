@@ -29,5 +29,5 @@ for i in range(len(x)):
     grid[1][1] = temp4
 
     
-print(grid[0][0],grid[0][1])
-print(grid[1][0],grid[1][1])
+print(str (grid[0][0])  + " " + str(grid[0][1]))
+print(str(grid[1][0]) + " " + str(grid[1][1]))
