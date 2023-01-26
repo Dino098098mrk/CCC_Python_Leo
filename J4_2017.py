@@ -41,5 +41,6 @@ def addnumber(number,real):
 new = roundoff(number)
 
 result = addnumber(new,real)
+result = result + int(62*int(number/ 1440))
 
 print(result)
