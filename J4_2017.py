@@ -10,6 +10,7 @@ def roundoff(number):
   else:
     return number
 
+#print(number)
 
 def addnumber(number,real):
   counter = 0
