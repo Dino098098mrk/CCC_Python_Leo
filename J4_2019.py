@@ -29,4 +29,5 @@ for i in range(len(x)):
     grid[1][1] = temp4
 
     
-print(grid)
+print(grid[0][0],grid[0][1])
+print(grid[1][0],grid[1][1])
