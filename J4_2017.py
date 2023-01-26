@@ -27,16 +27,19 @@ def addnumber(number,real):
         real[0] += 1
     if real[0] == 1 and real[1] == 3:
         real[0] = 0
-        real[1] += 1
+        real[1] = 1
+    
+    if(real[0] == 0):
+      if(real[1] - real[2] == real[2] - real[3]):
+        counter += 1
 
-    tie = real[0] - real[1]
-    if(tie== real[1]-real[2]  and tie== real[2] - real[3]):
-      counter += 1
-
+    else:
+      if(real[0] - real[1] == real[1] - real[2] == real[2] - real[3]):
+        counter+= 1
   return counter
 
 new = roundoff(number)
 
-result = (addnumber(new,real)
+result = addnumber(new,real)
 
 print(result)
