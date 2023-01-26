@@ -25,8 +25,8 @@ for i in range(len(x)):
 
     temp3 = grid[1][0];
     temp4 = grid[1][1];
-    grid[1][0] = temp3
-    grid[1][1] = temp4
+    grid[1][0] = temp4
+    grid[1][1] = temp3
 
     
 print(str (grid[0][0])  + " " + str(grid[0][1]))
