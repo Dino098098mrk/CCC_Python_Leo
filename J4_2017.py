@@ -11,7 +11,11 @@ def roundoff(number):
     return number
 
 
-
+#print(number)
+    
+for i in range(loops):
+  for j in range(4):
+    real[j] = roundoff(real[j
 def addnumber(number,real):
   counter = 0
   for i in range(number):
