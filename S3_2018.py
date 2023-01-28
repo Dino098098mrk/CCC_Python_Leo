@@ -1,6 +1,5 @@
 #1. factory
 #2. conceptual map
-
 rowcol = input().split()
 x = int(rowcol[0])
 y = int(rowcol[1])
@@ -114,11 +113,11 @@ for r in range(x):
       print(-1)
 
     #if factoryMap[i][j] == "C" then check up/down/left/right in factoryMap update factory map spot to *
-    if factoryMap[i][j] == "C":
-      factoryMap[i][j + 1] = "*"
-      factoryMap[i][j - 1] = "*"
+#     if factoryMap[i][j] == "C":
+#       factoryMap[i][j + 1] = "*"
+#       factoryMap[i][j - 1] = "*"
 
-print(factoryMap)
+# print(factoryMap)
 
 #for row
 
@@ -129,3 +128,4 @@ print(factoryMap)
 #queue startPosition
 #conceptualmap[startx][starty] = 0
 #BFS
+
