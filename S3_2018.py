@@ -64,9 +64,15 @@ conceptualmap[startPosition[0]][startPosition[1]] = 0
 
 while len(queue) != 0: #2. while loop for BFS
   currentCell = queue.pop(0) #3. extract the first item
-  currentRow = currentCell[0]
-  currentCol = currentCell[1]
-  
+  r = currentCell[0]
+  c = currentCell[1]
+  #4. check the cell
+  if (conceptualmap[r-1][c]==-1 
+      or (conceptualmap[r][c]<conceptualmap[r-1][c] and factoryMap[r][c]=='U') 
+      or conceptualmap[r][c]+1<conceptualmap[r-1][c] and factoryMap[r-1][c] not in ['W','*'] and factoryMap[r][c] not in ['D', 'L', 'R']:
+      if factoryMap[r][c] not in ['U', 'D', 'L', 'R']:
+    
+  )
 
     #if factoryMap[i][j] == "C" then check up/down/left/right in factoryMap update factory map spot to *
     if factoryMap[i][j] == "C":
