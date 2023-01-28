@@ -76,8 +76,8 @@ while len(queue) != 0:  #2. while loop for BFS
     queue.append([r - 1, c])
   #check down
   if (conceptualmap[r+1][c]==-1 \
-      or (conceptualmap[r][c]<conceptualmap[r-1][c] and factoryMap[r][c]=='D')\
-      or conceptualmap[r][c]+1<conceptualmap[r-1][c] and factoryMap[r-1][c] not in ['W','*'] and factoryMap[r][c] not in ['U', 'L', 'R']):
+      or (conceptualmap[r][c]<conceptualmap[r+1][c] and factoryMap[r][c]=='D')\
+      or conceptualmap[r][c]+1<conceptualmap[r+1][c] and factoryMap[r+1][c] not in ['W','*'] and factoryMap[r][c] not in ['U', 'L', 'R']):
     if factoryMap[r][c] not in ['U', 'D', 'L', 'R']:
       conceptualmap[r + 1][c] = conceptualmap[r][c] + 1
     else:  #case when we are on a conveyer
@@ -85,8 +85,8 @@ while len(queue) != 0:  #2. while loop for BFS
     queue.append([r + 1, c])
   #check left
   if (conceptualmap[r][c+1]==-1 \
-      or (conceptualmap[r][c]<conceptualmap[r-1][c] and factoryMap[r][c]=='L')\
-      or conceptualmap[r][c]+1<conceptualmap[r-1][c] and factoryMap[r-1][c] not in ['W','*'] and factoryMap[r][c] not in ['D', 'U', 'R']):
+      or (conceptualmap[r][c]<conceptualmap[r][c+1] and factoryMap[r][c+1]=='L')\
+      or conceptualmap[r][c]+1<conceptualmap[r][c+1] and factoryMap[r][c+1] not in ['W','*'] and factoryMap[r][c] not in ['D', 'U', 'R']):
     if factoryMap[r][c] not in ['U', 'D', 'L', 'R']:
       conceptualmap[r][c + 1] = conceptualmap[r][c] + 1
     else:  #case when we are on a conveyer
