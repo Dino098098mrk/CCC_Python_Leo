@@ -11,7 +11,6 @@ def roundoff(number):
     return number
 
 #print(number)
-
 def addnumber(number,real):
   counter = 0
   for i in range(number):

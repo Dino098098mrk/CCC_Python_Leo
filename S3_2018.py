@@ -57,8 +57,17 @@ for i in range(x):
           break
         count+=1
 
-    
-    
+
+
+queue = [startPosition] #1. need a queue for BFS
+conceptualmap[startPosition[0]][startPosition[1]] = 0
+
+while len(queue) != 0: #2. while loop for BFS
+  currentCell = queue.pop(0) #3. extract the first item
+  currentRow = currentCell[0]
+  currentCol = currentCell[1]
+  
+
     #if factoryMap[i][j] == "C" then check up/down/left/right in factoryMap update factory map spot to *
     if factoryMap[i][j] == "C":
       factoryMap[i][j+1] = "*"
@@ -70,6 +79,7 @@ for i in range(x):
 print(factoryMap)        
 
 #for row
+
 #    for col
 #        while 
             #if cam *

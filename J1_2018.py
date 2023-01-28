@@ -10,5 +10,5 @@ if first == 8 or first == 9:
       print("ignore")
     else:
       print("answer")
-  
-  
+
+#write a foor loop
