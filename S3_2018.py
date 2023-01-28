@@ -67,12 +67,18 @@ while len(queue) != 0: #2. while loop for BFS
   r = currentCell[0]
   c = currentCell[1]
   #4. check the cell
-  if (conceptualmap[r-1][c]==-1 
-      or (conceptualmap[r][c]<conceptualmap[r-1][c] and factoryMap[r][c]=='U') 
-      or conceptualmap[r][c]+1<conceptualmap[r-1][c] and factoryMap[r-1][c] not in ['W','*'] and factoryMap[r][c] not in ['D', 'L', 'R']:
+  if (conceptualmap[r-1][c]==-1 \
+      or (conceptualmap[r][c]<conceptualmap[r-1][c] and factoryMap[r][c]=='U')\
+      or conceptualmap[r][c]+1<conceptualmap[r-1][c] and factoryMap[r-1][c] not in ['W','*'] and factoryMap[r][c] not in ['D', 'L', 'R']):
       if factoryMap[r][c] not in ['U', 'D', 'L', 'R']:
+        conceptualmap[r-1][c]= conceptualmap[r][c]+1
+      else: #case when we are on a conveyer
+        conceptualmap[r-1][c]=conceptualmap[r][c]
+      queue.append([r-1,c])
+
     
-  )
+    
+  
 
     #if factoryMap[i][j] == "C" then check up/down/left/right in factoryMap update factory map spot to *
     if factoryMap[i][j] == "C":
