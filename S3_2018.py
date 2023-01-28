@@ -39,15 +39,21 @@ for i in range(x):
           break
         count+=1
 
-            #check up
+      #check right
       count = 0
       while True:
-        if factoryMap[i-count][j] in ['.','S']:
-          factoryMap[i-count][j] = '*'
-        elif factoryMap[i-count][j]=='W':
+        if factoryMap[i][j+count] in ['.','S']:
+          factoryMap[i][j+count] = '*'
+        elif factoryMap[i][j+count]=='W':
           break
         count+=1
 
+      while True:
+        if factoryMap[i][j-count] in ['.','S']:
+          factoryMap[i][j-count] = '*'
+        elif factoryMap[i][j-count]=='W':
+          break
+        count+=1
       
     
     #if factoryMap[i][j] == "C" then check up/down/left/right in factoryMap update factory map spot to *
