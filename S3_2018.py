@@ -11,8 +11,8 @@ conceptualmap = []
 for i in range(x):
   row = input()
   if startPosition is None:
-    start_col = row.find(
-      'S')  # find returns -1 if it doesnt find what you asked in this case 'S'
+    start_col = row.find('S')  
+    # find returns -1 if it doesnt find what you asked in this case 'S'
     if start_col != -1:
       startPosition = [i, start_col]
   factoryMap.append(list(row))
@@ -66,36 +66,31 @@ while len(queue) != 0:  #2. while loop for BFS
   c = currentCell[1]
   #4. check the cell and append the children
   #checkup
-  if (conceptualmap[r-1][c]==-1 \
-      or (conceptualmap[r][c]<conceptualmap[r-1][c] and factoryMap[r][c]=='U')\
-      or conceptualmap[r][c]+1<conceptualmap[r-1][c] and factoryMap[r-1][c] not in ['W','*'] and factoryMap[r][c] not in ['D', 'L', 'R']):
+  if (conceptualmap[r-1][c]==-1 or (conceptualmap[r][c]<conceptualmap[r-1][c] and factoryMap[r][c]=='U' or conceptualmap[r][c]+1<conceptualmap[r-1][c]) and factoryMap[r-1][c] not in ['W','*'] and factoryMap[r][c] not in ['D', 'L', 'R']):
     if factoryMap[r][c] not in ['U', 'D', 'L', 'R']:
       conceptualmap[r - 1][c] = conceptualmap[r][c] + 1
     else:  #case when we are on a conveyer
       conceptualmap[r - 1][c] = conceptualmap[r][c]
     queue.append([r - 1, c])
   #check down
-  if (conceptualmap[r+1][c]==-1 \
-      or (conceptualmap[r][c]<conceptualmap[r+1][c] and factoryMap[r][c]=='D')\
-      or conceptualmap[r][c]+1<conceptualmap[r+1][c] and factoryMap[r+1][c] not in ['W','*'] and factoryMap[r][c] not in ['U', 'L', 'R']):
+    
+  if (conceptualmap[r+1][c]==-1 or (conceptualmap[r][c]<conceptualmap[r+1][c] and factoryMap[r][c]=='D' or conceptualmap[r][c]+1<conceptualmap[r-1][c]) and factoryMap[r+1][c] not in ['W','*'] and factoryMap[r][c] not in ['U', 'L', 'R']):
     if factoryMap[r][c] not in ['U', 'D', 'L', 'R']:
       conceptualmap[r + 1][c] = conceptualmap[r][c] + 1
     else:  #case when we are on a conveyer
       conceptualmap[r + 1][c] = conceptualmap[r][c]
     queue.append([r + 1, c])
+
+    
   #check left
-  if (conceptualmap[r][c+1]==-1 \
-      or (conceptualmap[r][c]<conceptualmap[r][c+1] and factoryMap[r][c+1]=='L')\
-      or conceptualmap[r][c]+1<conceptualmap[r][c+1] and factoryMap[r][c+1] not in ['W','*'] and factoryMap[r][c] not in ['D', 'U', 'R']):
+  if (conceptualmap[r][c+1]==-1 or (conceptualmap[r][c]<conceptualmap[r][c+1] and factoryMap[r][c+1]=='L' or conceptualmap[r][c]+1<conceptualmap[r][c+1]) and factoryMap[r][c+1] not in ['W','*'] and factoryMap[r][c] not in ['D', 'U', 'R']):
     if factoryMap[r][c] not in ['U', 'D', 'L', 'R']:
       conceptualmap[r][c + 1] = conceptualmap[r][c] + 1
     else:  #case when we are on a conveyer
       conceptualmap[r][c + 1] = conceptualmap[r][c]
     queue.append([r, c + 1])
   #check right
-  if (conceptualmap[r][c-1]==-1 \
-      or (conceptualmap[r][c]<conceptualmap[r-1][c] and factoryMap[r][c]=='R')\
-      or conceptualmap[r][c]+1<conceptualmap[r-1][c] and factoryMap[r-1][c] not in ['W','*'] and factoryMap[r][c] not in ['D', 'L', 'U']):
+  if (conceptualmap[r][c-1]==-1 or (conceptualmap[r][c]<conceptualmap[r][c-1] and factoryMap[r][c]=='R' or conceptualmap[r][c]+1<conceptualmap[r][c-1]) and factoryMap[r][c-1] not in ['W','*'] and factoryMap[r][c] not in ['D', 'L', 'U']):
     if factoryMap[r][c] not in ['U', 'D', 'L', 'R']:
       conceptualmap[r][c - 1] = conceptualmap[r][c] + 1
     else:  #case when we are on a conveyer
