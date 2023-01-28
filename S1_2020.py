@@ -8,3 +8,4 @@ for i in range(times):
   Input = str(input())
   timeAndLocation = Input.split()
   timeAndLocation = map(int,timeAndLocation)
+  records.append((timeAndLocation[0],timeAndLocation[1]))
