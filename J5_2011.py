@@ -1,14 +1,12 @@
+#brute
 from itertools import combinations
-def getCombination(k):
+def getCombination(k): #take away: how to use combinations
   totalPeople = [x for x in range(1,k+1)]
   b = []
   for howManyPeopleToKick in range(2,k+1):
     b+=list(map(list, list(combinations(totalPeople, howManyPeopleToKick))))
   return b
     
-
-
-
 n = int(input())
 friendsDict = {}
 for x in range (1,n+1):
