@@ -1,4 +1,4 @@
-`2records = []
+2records = []
 speeds = []
 
 times = int(input())
