@@ -1,6 +1,7 @@
 print("23/02/04")
 #teams: 1,2,3,4
 game_list = [[1,2],[2,3],[1,3],[2,4],[4,1],[3,4]]
+teamscore = [0,0,0,0]
 
 favteam = int(input())
 gameplayed = int(input())
