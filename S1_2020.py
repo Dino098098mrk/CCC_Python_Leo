@@ -1,6 +1,5 @@
-2records = []
+records = []
 speeds = []
-
 times = int(input())
 
 for i in range(times):
