@@ -72,11 +72,11 @@ def BFS():
     game_list.remove([team1,team2])
   def breadFirstSearch(board, matchList):
     count = 0
-    queue = [(board, matchList)]
+    queue = [(board, matchList)]#scoreboard, remaining matches up to this point
     while queue:
       scoreState, nextMatch = queue.pop(0)
       if not nextMatch:
-        if max(scoreState.values()) == scoreState[favteam] and list(scoreState.value()).count(max(scoreState.values()))<2:
+        if max(scoreState.values()) == scoreState[favteam] and list(scoreState.values()).count(max(scoreState.values()))<2:
           count+=1
         continue
       team1, team2 = nextMatch[0][0], nextMatch[0][1]
@@ -90,4 +90,6 @@ def BFS():
       queue.append((win, tempResult))
       queue.append((tie, tempResult))
       queue.append((lose, tempResult))
+    return count
+  print(breadFirstSearch(teamscore,game_list ))
 BFS()
