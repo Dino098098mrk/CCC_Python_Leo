@@ -21,6 +21,8 @@ for i in range(gameplayed):
     teamscore[team1-1] += 1
     teamscore[team2-1] += 1
 
-
+predictboard = [teamscore for i in range(pow(3,6-gameplayed))]
+print(predictboard)
 #list(teamscore * rows)
-#[teamscore]
+#[teamscore]*rows
+#[teamscore for i in range(rows)]
