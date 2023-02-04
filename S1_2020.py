@@ -30,7 +30,7 @@ for i in range(len(records)):
       
 #       speeds.append(abs( int(i[1])  - int( j[1]))/ abs(int(i[0]) - int(j[0])))
     
-print(max(speeds))
+print("%.1f" % max(speeds))
 
 # print(max(speeds))
   # get speed 
