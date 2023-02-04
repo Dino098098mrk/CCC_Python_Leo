@@ -13,5 +13,12 @@ for i in range(gameplayed):
   t1Score = int(game_result[2])
   t2Score = int(game_result[3])
   game_list.remove([team1,team2])
+  if t1Score > t2Score:
+    teamscore[team1-1] += 3
+  elif t2Score > t1Score:
+    teamscore[team2-1] += 3
+  else:
+    teamscore[team1-1] += 1
+    teamscore[team2-1] += 1
   
 
