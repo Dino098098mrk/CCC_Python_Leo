@@ -20,5 +20,7 @@ for i in range(gameplayed):
   else:
     teamscore[team1-1] += 1
     teamscore[team2-1] += 1
-  
 
+
+#list(teamscore * rows)
+#[teamscore]
