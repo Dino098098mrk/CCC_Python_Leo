@@ -1,6 +1,6 @@
 print("23/02/04")
 #teams: 1,2,3,4
-game_list = [[1,2],[2,3],[1,3],[2,4],[4,1],[3,4]]
+game_list = [[1,2],[2,3],[1,3],[2,4],[1,4],[3,4]]
 teamscore = [0,0,0,0]
 
 favteam = int(input())
@@ -12,5 +12,6 @@ for i in range(gameplayed):
   team2 = int(game_result[1])
   t1Score = int(game_result[2])
   t2Score = int(game_result[3])
-
+  game_list.remove([team1,team2])
+  
 
