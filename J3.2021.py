@@ -7,5 +7,5 @@ while(True):
     break
   else:
     if (int(instruction[0]) + int(instruction[1])) % 2 == 0:
-      output += "right"
+      output += "right " + instruction[2:] 
     
