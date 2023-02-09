@@ -17,5 +17,10 @@ while(True):
       output += last + instruction[2:] +"\n"
 
     
+#asdasd
+print(output)
+
+
+
 
 print(output)
