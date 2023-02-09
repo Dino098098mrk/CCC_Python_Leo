@@ -1,29 +1,29 @@
 while(True):
   x = input("Enter phrase> ")
   if x == "CU":
-    print("see you")
+    print("\nsee you")
   elif x == ":-)":
-    print("I’m happy")
+    print("\nI’m happy")
   elif x== ":-(":
-    print("I'm unhappy")
+    print("\nI'm unhappy")
   elif x == ";-)":
-    print("wink")
+    print("\nwink")
   elif x == ":-P":
-    print("stick out my tongue")
+    print("\nstick out my tongue")
   elif x == "(˜.˜)":
-    print("sleepy")
+    print("\nsleepy")
   elif x == "TA":
-    print("totally awesome")
+    print("\ntotally awesome")
   elif x == "CCC":
-    print("Canadian Computing Competition")
+    print("\nCanadian Computing Competition")
   elif x == "CUZ":
-    print("because")
+    print("\nbeacuse")
   elif x == "TY":
-    print("thank you")
+    print("\nthank you")
   elif x == "YW":
-    print("you're welcome")
+    print("\nyou're welcome")
   elif x == "TTYL":
-    print("talk to you later")
-    break
+    print("\ntalk to you later")
   else:
     print(x)
+    break
