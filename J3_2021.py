@@ -15,8 +15,4 @@ while(True):
       last = "left "
     elif (int(instruction[0]) + int(instruction[1])) == 0:
       output += last + instruction[2:] +"\n"
-
-  #314asdasdasdadasdasd
-
-  if int(instruction) == 314
 print(output)
