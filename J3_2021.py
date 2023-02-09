@@ -16,11 +16,5 @@ while(True):
     elif (int(instruction[0]) + int(instruction[1])) == 0:
       output += last + instruction[2:] +"\n"
 
-    
-#asdasd
-print(output)
-
-
-
-
+  
 print(output)
