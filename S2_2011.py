@@ -1,13 +1,22 @@
 run = int(input())
-
-answer = ""
-key = ""
-
+answer = []
+key = []
 count = 1
+matches = 0
 
 for i in range(run*2):
-  if count >3:
-    key.append(i)
+  x = str(input())
+  if count >run:
+    key.append(x)
   else:
-    answer.append(i)
+    answer.append(x)
+
+  count += 1
+
+for i in range(run):
+  if answer[i] == key[i]:
+    matches+= 1
+
+
+print(matches)
 

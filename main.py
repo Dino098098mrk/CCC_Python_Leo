@@ -3,4 +3,4 @@
 # import MockExamSol
 # import CCC2007
 
-import S2_2006
+import S2_2015
