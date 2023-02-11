@@ -22,4 +22,3 @@ for i in goal:
       counter += 1
 
 print(counter)
-print(size)
