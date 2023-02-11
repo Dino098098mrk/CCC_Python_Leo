@@ -6,7 +6,7 @@ dict =dict()
 output = ""
 #construct dictionary
 for i in range(len(plaintext)):
-  if(encrypted[i] not in dict.keys):
+  if(encrypted[i] not in dict.keys()):
     dict[encrypted[i]]=plaintext[i]
 
 #translate
@@ -15,3 +15,6 @@ for i in translate:
     output += '.'
   else:
     output += dict[i]
+
+
+print(output)
